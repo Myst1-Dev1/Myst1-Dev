@@ -270,10 +270,18 @@ span{
     color: red;
 }
 
+.linksM{
+    color: aliceblue;
+    margin-top: 60px;
+    display: none;
+}
+
 /* Contato */
 
 .contato{
     padding: 100px;
+    background: url(./imgP5/fundo1.png);
+    background-size: cover;
 }
 
 .contatoform{
@@ -290,14 +298,17 @@ span{
     text-align: center;
 }
 
+
+
 .form1 input[type="text"],[type="email"]{
     display: block;
     margin-bottom: 20px;
     background: none;
-    border:1px solid rgb(212, 11, 11);
-    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid red;
     height: 30px;
     color: aliceblue;
+    width: 200px;
     padding: 10px;
 }
 
@@ -307,11 +318,11 @@ span{
 
 .form1 textarea{
     resize: none;
-    height: 50px;
-    width: 170px;
+    border:none;
     background: none;
-    border:1px solid rgb(212, 11, 11);
-    border-radius: 10px;
+    border-bottom: 1px solid red;
+    height: 80px;
+    width: 200px;
     padding: 10px;
     color: aliceblue;
     margin-bottom: 10px;
@@ -323,15 +334,15 @@ span{
 
 .form1 input[type="submit"]{
     display: block;
-    margin-bottom: 20px;
     background: none;
     border:1px solid rgb(212, 11, 11);
     border-radius: 10px;
-    height: 30px;
-    width: 190px;
+    height: 50px;
+    width: 200px;
     color: aliceblue;
-    padding: 10px;
+    padding: 20px 0;
     cursor: pointer;
+    font-size: 20px;
     transition: 1s;
 }
 
@@ -365,10 +376,18 @@ span{
         flex-wrap: wrap;
     }
 
+    .projeto img{
+        width: 100%;
+    }
+
     .conteudoP img{
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .linksM{
+        display: block;
     }
   
 }
@@ -396,4 +415,5 @@ span{
     .contato{
         padding: 100px 15px;
     }
+
 }
