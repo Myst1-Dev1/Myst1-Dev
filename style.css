@@ -40,7 +40,7 @@ body{
 }
 
 .navbar{
-    padding: 30% 0;
+    padding: 40% 0;
 }
 
 .navbar ul{
@@ -170,13 +170,13 @@ body{
 
 .bar2{
     width: 126px;
-    height: 10px;
+    height: 8px;
     background-color: rgba(212, 11, 11, 0.767);
 }
 
 .bar3{
     width: 56px;
-    height: 10px;
+    height: 8px;
     background-color: rgba(212, 11, 11, 0.767);
 }
 
@@ -227,10 +227,16 @@ span{
 /* Projetos */
 
 .projetos{
-    padding: 100px;
+    padding: 100px 0;
 }
 
-.projetoflex{
+.projetos img{
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+}
+
+/* .projetoflex{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -241,9 +247,9 @@ span{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+} */
 
-.conteudoP{
+/* .conteudoP{
     color: aliceblue;
     font-family: poppins;
     display: flex;
@@ -251,14 +257,20 @@ span{
     align-items: center;
     flex-direction: column;
     margin-bottom: 20px;
-}
+} */
 
-.conteudoP img{
+/* .conteudoP img{
     width: 60%;
     height: 60%;
     object-fit: cover;
     margin-bottom: 10px;
-}
+} */
+
+/* .imgRE{
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+} */
 
 .subtitles a{
     text-decoration: none;
@@ -273,6 +285,7 @@ span{
 .linksM{
     color: aliceblue;
     margin-top: 60px;
+    padding: 0 10px;
     display: none;
 }
 
@@ -298,17 +311,15 @@ span{
     text-align: center;
 }
 
-
-
 .form1 input[type="text"],[type="email"]{
     display: block;
     margin-bottom: 20px;
     background: none;
     border: none;
-    border-bottom: 1px solid red;
-    height: 30px;
+    border: 1px solid red;
+    height: 40px;
     color: aliceblue;
-    width: 200px;
+    width: 220px;
     padding: 10px;
 }
 
@@ -320,9 +331,9 @@ span{
     resize: none;
     border:none;
     background: none;
-    border-bottom: 1px solid red;
-    height: 80px;
-    width: 200px;
+    border: 1px solid red;
+    height: 100px;
+    width: 220px;
     padding: 10px;
     color: aliceblue;
     margin-bottom: 10px;
@@ -334,16 +345,15 @@ span{
 
 .form1 input[type="submit"]{
     display: block;
+    margin-bottom: 20px;
     background: none;
-    border:1px solid rgb(212, 11, 11);
-    border-radius: 10px;
-    height: 50px;
-    width: 200px;
+    border: none;
+    border: 1px solid red;
+    height: 40px;
     color: aliceblue;
-    padding: 20px 0;
-    cursor: pointer;
-    font-size: 20px;
+    width: 220px;
     transition: 1s;
+    
 }
 
 .form1 input[type="submit"]:hover{
@@ -355,9 +365,10 @@ span{
 /* Fim */
 
 .fim{
-    background-color: rgb(2, 2, 46);
+    background-color: rgb(3, 3, 26);
     width: 100%;
-    height: 70px;
+    height: 80px;
+    border-top: 1px solid rgba(255, 0, 0, 0.24);
 }
 
 .fim p{
@@ -376,11 +387,11 @@ span{
         flex-wrap: wrap;
     }
 
-    .projeto img{
-        width: 100%;
-    }
+    /* .projetos{
+        padding: 50px;
+    } */
 
-    .conteudoP img{
+    .projetos img{
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -406,11 +417,11 @@ span{
         padding: 100px 10px;
     }
 
-    .conteudoP img{
+    /* .conteudoP img{
         width: 80%;
         height: 80%;
         object-fit: cover;
-    }
+    } */
 
     .contato{
         padding: 100px 15px;
