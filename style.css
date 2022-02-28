@@ -316,11 +316,17 @@ span{
     margin-bottom: 20px;
     background: none;
     border: none;
-    border: 1px solid red;
+    background-color: white;
     height: 40px;
-    color: aliceblue;
+    color: black;
     width: 220px;
     padding: 10px;
+}
+
+.form1{
+    background:linear-gradient(120deg,black,red);
+    padding: 20px 22px;
+    border-radius: 10px;
 }
 
 .form1 input[type="text"],[type="email"]:focus{
@@ -331,11 +337,11 @@ span{
     resize: none;
     border:none;
     background: none;
-    border: 1px solid red;
+    background-color: white;
     height: 100px;
     width: 220px;
     padding: 10px;
-    color: aliceblue;
+    color: black;
     margin-bottom: 10px;
 }
 
@@ -348,12 +354,11 @@ span{
     margin-bottom: 20px;
     background: none;
     border: none;
-    border: 1px solid red;
+    background-color: black;
     height: 40px;
     color: aliceblue;
     width: 220px;
     transition: 1s;
-    
 }
 
 .form1 input[type="submit"]:hover{
