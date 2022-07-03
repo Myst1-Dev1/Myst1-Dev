@@ -1,458 +1,286 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body{
-    background-color: black;
+    background-color: #010326;
 }
 
-/* Header */
+.wrap{
+    flex-wrap: wrap;
+}
 
-.header{
-    position: fixed;
-    top: 0;
-    left: -26rem;
-    z-index: 10000;
-    padding: 20px;
-    background-color:rgba(255, 0, 0, 0.24);
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    width: 100%;
     height: 100%;
-    width: 15rem;
+    position: fixed;
+    top: -100%;
+    left: 0;
     transition: 1s;
 }
 
-.header h1{
-    color: aliceblue;
-    font-family: poppins;
-}
-
-.A{
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    margin-bottom: 50px;
+.navbar .close{
     position: absolute;
-    top: 9rem;
+    top: 1rem;
     left: 2rem;
+    z-index: 1000;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-.navbar{
-    padding: 40% 14px;
+.active{
+    top: 0;
+    z-index: 2;
 }
 
 .navbar ul{
-    display: block;
     list-style: none;
 }
 
 .navbar ul li a{
     text-decoration: none;
-    font-family: poppins;
-    color: aliceblue;
-    margin: 2rem 0;
-    font-size: 1.5rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
     transition: 1s;
-    font-weight: bolder;
 }
 
 .navbar ul li a:hover{
-    color: red;
+    color: crimson;
 }
 
-#menu-btn{
-    position: fixed;
-    top: 8rem;
-    left: 2rem;
-    color: white;
-    font-size: 40px;
-    line-height: 5rem;
-    cursor: pointer;
-    z-index: 1100;
-    display: inline-block;
-}
-
-.active{
-    left: 0;
-}
-
-.socials{
-    font-size: 30px;
-    color: white;
-}
-
-.socials i{
-    margin-left: 10px;
-    transition: 1s;
-}
-
-.socials a{
-    text-decoration: none;
-    color: aliceblue;
-}
-
-.socials i:hover{
-    color: red;
-}
-
-
-/* banner */
+/* Banner */
 
 .banner{
-    background:linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.80)),url(./imgP5/fundo2.jpg);
+    background: url(./img/bg.jpg);
     width: 100%;
     min-height: 100vh;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.conteudoB{
-    color: aliceblue;
-    font-family: poppins;
-    text-align: center;
-    font-weight: bolder;
-    text-transform: capitalize;
-}
-
-.conteudoB h2{
-    font-size: 70px;
-    text-shadow: 0 40px 55px aliceblue;
-}
-
-/* sobre */
-
-.sobre{
-    padding: 100px 40px;
-}
-
-.sobreflex{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.img-container{
-    position: relative;
-    width: 80px;
-    height: 80px;
-    margin-bottom: 7px;
-}
-
-.img-container img {
+.banner i{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
+    top: 1rem;
+    left: 2rem;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
 }
 
-.sobreconteudo{
+.banner h1, h2{
     color: aliceblue;
-    font-family: poppins;
-    font-size: 16px;
-    margin-bottom: 20px;
-    border: 1px solid white;
-    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
 }
 
-.sobreconteudo p{
-    margin-bottom: 10px;
-    font-weight: bolder;
+/* About */
+
+.subtitle{
+    font-family: "Shojumaru", sans-serif;
+    letter-spacing: 3px;
+    color: crimson;
 }
 
-.langs{
-    color: aliceblue;
-    font-family: poppins;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.langs p{
-    margin-bottom: 18px;
-}
-
-.bar1{
-    width: 140px;
-    height: 10px;
-    border:1px solid white;
-}
-
-.bar2{
-    width: 126px;
-    height: 8px;
-    background-color: rgba(212, 11, 11, 0.767);
-}
-
-.bar3{
-    width: 56px;
-    height: 8px;
-    background-color: rgba(212, 11, 11, 0.767);
-}
-
-.bar4{
-    width: 66px;
-    height: 8px;
-    background-color: rgba(212, 11, 11, 0.767);
-}
-
-span{
-    color: rgb(212, 11, 11);
-    font-weight: bolder;
-}
-
-/* Servicos */
-
-.servicos{
-    padding: 100px;
-}
-
-.servicoflex{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.servicoconteudo{
-    width: 300px;
-    height: 200px;
-    border:1px solid white;
-    color: aliceblue;
-    font-family: poppins;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 20px;
-    text-align: center;
+.about-content img{
+    width: 16rem;
     border-radius: 10px;
-    transition: 1s;
 }
 
-.servicoconteudo:hover{
-    background-color: rgba(212, 11, 11, 0.767);
+.about-content p{
+    max-width: 400px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.servicoconteudo i{
-    font-size: 40px;
-    padding: 10px 0;
-}
-
-
-/* Projetos */
-
-.projetos{
-    padding: 100px 0;
-}
-
-.projetos img{
-    width: 75%;
-    height: 75%;
-    object-fit: cover;
-}
-
-/* .projetoflex{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.flexp1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
-
-/* .conteudoP{
-    color: aliceblue;
-    font-family: poppins;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 20px;
-} */
-
-/* .conteudoP img{
-    width: 60%;
-    height: 60%;
-    object-fit: cover;
-    margin-bottom: 10px;
-} */
-
-/* .imgRE{
-    width: 60%;
-    height: 60%;
-    object-fit: cover;
-} */
-
-.subtitles a{
+.social-icons a{
     text-decoration: none;
     color: aliceblue;
-    transition: 1s;
+    font-size: 25px;
+    margin-left: 10px;
+    transition: all ease 0.3s;
 }
 
-.subtitles a:hover{
+.social-icons a:hover{
     color: red;
 }
 
-.linksM{
-    color: aliceblue;
-    margin-top: 60px;
-    padding: 0 10px;
-    display: none;
-}
-
-/* Contato */
-
-.contato{
-    padding: 100px;
-    background: url(./imgP5/fundo1.png);
-    background-size: cover;
-}
-
-.contatoform{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contatoform h2{
-    color: aliceblue;
-    font-family: poppins;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.form1 input[type="text"],[type="email"]{
-    display: block;
-    margin-bottom: 20px;
-    background: none;
-    border: none;
-    background-color: white;
-    height: 40px;
-    color: black;
-    width: 220px;
+.btn1{
     padding: 10px;
+    background-color: crimson;
+    border: none;
+    border-radius: 10px;
+    transition: all ease 0.3s;
 }
 
-.form1{
-    background:linear-gradient(120deg,black,red);
-    padding: 20px 22px;
+.btn1:hover{
+    background-color: rgb(94, 8, 25);
+}
+
+.about-content button a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Skills */
+
+.skill-content{
+    column-count: 4;
+}
+
+.box{
+    width: 12rem;
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 15px 8px;
+    margin-bottom: 10px;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
     border-radius: 10px;
 }
 
-.form1 input[type="text"],[type="email"]:focus{
-    outline: none;
+.box img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
 }
 
-.form1 textarea{
-    resize: none;
-    border:none;
-    background: none;
-    background-color: white;
-    height: 100px;
-    width: 220px;
-    padding: 10px;
-    color: black;
-    margin-bottom: 10px;
-}
+/* Projects */
 
-.form1 textarea:focus{
-    outline: none;
-}
-
-.form1 input[type="submit"]{
-    display: block;
+.projects .box2 h4{
     margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.img-container{
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 20rem;
+    margin-bottom: 20px;
+}
+
+.img-container p{
+    font-size: 20px;
+}
+
+.img-container a img{
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Contact */
+
+.contact i{
+    font-size: 20px;
+    color: crimson;
+    width: 50px;
+}
+
+.subtitle-contact h4, p{
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contato-form{
+    margin: auto;
+}
+
+.contato-form .inputbox input{
+    padding: 10px;
+    border: none;
+    background: none;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    width: 95%;
+    margin-bottom: 10px;
+    color: aliceblue;
+    margin-right: 5px;
+}
+
+.contato-form textarea{
+    padding: 10px;
     background: none;
     border: none;
-    background-color: black;
-    height: 40px;
+    resize: none;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    width: 98%;
+    height: 120px;
     color: aliceblue;
-    width: 220px;
-    transition: 1s;
 }
 
-.form1 input[type="submit"]:hover{
-    background-color: red;
+.contato-form input, textarea:focus{
+    outline: none;
 }
 
+/* end */
 
-
-/* Fim */
-
-.fim{
-    background-color: rgb(3, 3, 26);
-    width: 100%;
-    height: 80px;
-    border-top: 1px solid rgba(255, 0, 0, 0.24);
+.footer{
+    border-top: 1px solid crimson;
 }
 
-.fim p{
-    text-align: center;
-    color: aliceblue;
-    font-family: poppins;
-    padding-top: 10px;
+.footer p{
+    font-family: 'Poppins', sans-serif;
 }
 
 
 
-/* rr */
 
-@media (max-width:991px){
-    .projetoflex{
-        flex-wrap: wrap;
+
+
+
+
+
+/*  */
+@media (max-width:730px){
+    .about-content img{
+        margin-bottom: 10px;
     }
 
-    /* .projetos{
-        padding: 50px;
-    } */
+    .box{
+        width: 7rem;
+        margin: auto;
+        margin-bottom: 10px;
+    }
 
-    .projetos img{
+    .box img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .skill-content{
+        column-count: 2;
+        margin: auto;
+    }
+
+    .img-container{
+        margin: auto;
+    }
+
+    .contato-form .inputbox input{
         width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
-    .linksM{
-        display: block;
-    }
-  
-}
-
-@media (max-width:340px){
-    .sobre{
-        padding: 100px 0px;
-        margin-left: 20px;
-    }
-
-    .servicos{
-        padding: 100px 15px;
-    }
-
-    .projetos{
-        padding: 100px 10px;
-    }
-
-    /* .conteudoP img{
-        width: 80%;
-        height: 80%;
-        object-fit: cover;
-    } */
-
-    .contato{
-        padding: 100px 15px;
+    .contato-form textarea{
+        width: 100%;
     }
 
 }
