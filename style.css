@@ -60,7 +60,7 @@ body{
 
 /* Banner */
 
-.banner{
+#particles-js{
     background: url(./img/bg.jpg);
     width: 100%;
     min-height: 100vh;
@@ -81,10 +81,11 @@ body{
     z-index: 1;
 }
 
-.banner h1, h2{
+.banner-subtitles{
     color: aliceblue;
     font-family: "Poppins", sans-serif;
     letter-spacing: 3px;
+    position:absolute;
 }
 
 /* About */
