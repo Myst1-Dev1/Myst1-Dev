@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=Poppins:wght@100;400;600&family=Shojumaru&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
@@ -29,15 +30,17 @@
     <!-- Banner -->
 
 
-    <div class="banner">
+    <div class="banner" id="particles-js">
         <i id="menu-bar" class="fa-solid fa-bars"></i>
-        <h1>Hello I'm Myst1</h1>
-        <h2>I Am a Developer</h2>
+        <div class="banner-subtitles">
+            <h1>Hello I'm Myst1</h1>
+            <h2>I Am a Developer</h2>
+        </div>
     </div>
 
     <!-- About -->
 
-    <div class="about container py-5" id="about">
+    <div class="about container py-5" data-aos="fade-up-right" id="about">
         <h2 class="subtitle">About Me</h2>
 
         <div class="about-content mt-5 d-flex justify-content-center align-items-center wrap">
@@ -60,7 +63,7 @@
 
     <!-- Skills -->
 
-    <div class="skills container py-5" id="skill">
+    <div class="skills container py-5" data-aos="fade-down-right" id="skill">
         <h2 class="subtitle">Skills</h2>
 
         <div class="mt-5 skill-content text-center">
@@ -101,7 +104,7 @@
 
     <!-- Projects -->
 
-    <div class="projects container py-5" id="projects">
+    <div class="projects container py-5" data-aos="fade-down-right" id="projects">
         <h2 class="subtitle">Projects</h2>
         <div class="project-container d-flex justify-content-between align-items-center wrap mt-5">
             <div class="img-container">
@@ -140,7 +143,7 @@
 
     <!-- Contact -->
 
-    <div class="contact container w-100 py-5" id="contact">
+    <div class="contact container w-100 py-5" data-aos="fade-right" id="contact">
         <h2 class="subtitle">Contact</h2>
         <div class="mt-5 d-flex wrap">
             <div class="d-flex flex-column px-3">
@@ -189,12 +192,19 @@
 
 
     <div class="footer mt-5 text-center text-light">
-        <p class="mt-3"> &copy; 2022 Developed by João Victor V. Flôr</p>
+        <p class="mt-3">@2022 Developed by João Victor V. Flôr</p>
     </div>
 
 
 
-    <script src="script.js"></script>
-    
+    <script src="./js/script.js"></script>
+    <script src="./js/particles.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>
