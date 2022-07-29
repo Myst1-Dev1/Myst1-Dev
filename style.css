@@ -209,7 +209,7 @@ body{
     padding: 10px;
     border: none;
     background: none;
-    background-color: #1a1a1a;
+    border:1px solid #a128;
     border-radius: 5px;
     width: 95%;
     margin-bottom: 10px;
@@ -221,8 +221,8 @@ body{
     padding: 10px;
     background: none;
     border: none;
+    border:1px solid #a128;
     resize: none;
-    background-color: #1a1a1a;
     border-radius: 5px;
     width: 98%;
     height: 120px;
